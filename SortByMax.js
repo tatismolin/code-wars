@@ -2,9 +2,7 @@
 // If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
 
 function superSize(num){
-
   const newNum = num.toString().split("");
-
   const max = (a, b) => {
     if(a > b){
       return -1;
@@ -16,11 +14,9 @@ function superSize(num){
   };
 
   const sortedNum = newNum.sort(max).join("");
-  
   if(num.length == 1){
     return num;
   }else{
     return parseInt(sortedNum);
   };
-  
 };
