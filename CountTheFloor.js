@@ -18,5 +18,5 @@ function getRealFloor(n){
     }else{
       return n;
     }
-  };
+};
 
