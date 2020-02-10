@@ -14,5 +14,3 @@ function printNumbers(){
             console.log(i)
         };
 };
-
-printNumbers();
