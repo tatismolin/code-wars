@@ -17,3 +17,17 @@ function sumOfMinimums(arr){
     return newArray.reduce((sum, num) => sum + num);
 };
   
+// OR
+
+// function sumMin(array){
+//   let newArray = array.map(array => {
+//     let min = array[0];
+//     for(let i = 0; i < array.length; i++){
+//       if(array[i] < min){
+//         min = array[i];
+//       }
+//     }
+//     return min;
+//   });
+//   return newArray.reduce((sum, num) => sum + num)
+// };

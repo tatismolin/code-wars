@@ -2,7 +2,7 @@
 // P.S. Each array includes only integer numbers. Output is a number too.
 
 function arrayPlusArray(arr1, arr2){
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  const reducer = (sum, num) => sum + num;
   let arrayA = arr1.reduce(reducer);
   let arrayB = arr2.reduce(reducer);
   return arrayA + arrayB;
