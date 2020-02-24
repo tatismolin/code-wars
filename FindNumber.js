@@ -1,22 +1,13 @@
+// Find and return unique values of givven array.
 
+function findUnique(array){
+  let sortedArray = array.sort();
+  let uniqueArray = [];
 
-function sol(A){
-    let uniqArr = [...new Set(A.sort())];
-    console.log(uniqArr) ;
-    let noNegative = uniqArr.filter(function(x){ return x > -1 });
-  
-    if (uniqArr[0] < 0 && uniqArr[-1]){
-      result = 1
-    } else {
-    for(i = 0; i < noNegative.length; i++){
-       if (noNegative[i] == i+1){
-         continue;
-       } else {
-         result = i+1;
-       }
+  for(let i = 0; i < sortedArray.length; i++){
+    if(sortedArray[i-1] !== sortedArray[i]){
+      uniqueArray.push(sortedArray[i])
     };
-    }
-  
-  
-    return result;
-  }
+  };
+  return uniqueArray;
+};
